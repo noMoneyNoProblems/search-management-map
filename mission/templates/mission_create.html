@@ -13,11 +13,11 @@
     </head>
     <body style="height: 100%">
         <form method="POST">
-        {% csrf_token %}
-        <table>
-        {{ form.as_table }}
-        </table>
-        <button id='mission_create_btn' class="btn btn-primary" onclick='$("#mission_create_btn").attr("disabled", true);'>Start</button>
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="submit" id='mission_create_btn' class="btn btn-primary" value="Start">
         </form>
     </body>
 </html>
